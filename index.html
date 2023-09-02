@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="INSPIRO" />
+    <meta name="description" content="Themeforest Template Polo">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document title -->
+    <title>WE CARE HOME SERVICES | Home Page</title>
+    <!-- Stylesheets & Fonts -->
+    <link href="css/plugins.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .contact ul {
+            display: flex;
+            gap: 30px;
+            justify-content: end;
+            list-style-type: none;
+            margin-top: 1rem;
+        }
+
+        .contact ul li a {
+            color: white;
+        }
+
+        .contact ul li a:hover {
+            color: red !important;
+        }
+
+        .div-content {
+            height: 310px;
+        }
+
+        .explore {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #009FD9;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .explore:hover {
+            background-color: white;
+            color: #009FD9;
+        }
+
+        .contact_whatsapp {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 2%;
+            left: 2%;
+            z-index: 999999;
+        }
+
+        .contact_whatsapp img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .phone-display {
+            display: none;
+        }
+
+
+        @media (max-width: 768px) {
+            .quote {
+                font-size: 15px;
+            }
+
+            .div-content {
+                height: 70px;
+            }
+
+            .phone-display {
+                display: initial;
+            }
+        }
+
+        @media only screen and (min-width:1px) and (max-width:520px) {
+            .contact_whatsapp {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                position: fixed;
+                bottom: 2%;
+                left: 2%;
+                z-index: 999999;
+            }
+
+            .contact_whatsapp img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<div class="contact_whatsapp"
+    onclick="window.open('https://api.whatsapp.com/send?phone=+917995414496&text=Hi,%20I%20got%20your%20number%20from%20your%20website,%20We%20Care%20Home%20Services')">
+    <img src="images/whatsapp.png">
+</div>
+
+<body class="boxed-simple">
+    <!-- Topbar -->
+    <div id="topbar" class="dark topbar-colored topbar-fullwidth">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div style="margin-top:1rem;">
+                        <span class="quote lead text-center" style="color: white;">Bringing Comfort to Your
+                            Doorstep</span>
+                    </div>
+                </div>
+                <div class="col-md-6 d-none d-sm-block">
+                    <div class="contact">
+                        <ul style="display: flex; gap:30px; list-style-type: none;">
+                            <li><a href="mailto:wecarehomeservices5@gmail.com">Email : <i
+                                        class="fa fa-envelope"></i>wecarehomeservices5@gmail.com</a></li>
+                            <li><a href="tel:+919666351433"><i class="fa fa-phone"></i> +91 9666351433</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end: Topbar -->
+    <!--HEADER-->
+    <header id="header" class="dark">
+        <div class="header-inner">
+            <div class="container">
+                <a class="phone-display" href="tel:+919666351433"><i class="fa fa-phone"></i> +91 9666351433</a>
+                <!--Navigation Resposnive Trigger-->
+                <div id="mainMenu-trigger"> <a class="lines-button x"><span class="lines"></span></a> </div>
+                <!--end: Navigation Resposnive Trigger-->
+                <!--Navigation-->
+                <div id="mainMenu" class="menu-center">
+                    <div class="container">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li class="dropdown"><a href="services.html">Services</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="services.html#refrigerator">Refrigerator Service</a></li>
+                                        <li><a href="services.html#airconditioner">AC Service</a></li>
+                                        <li><a href="services.html#painting">Painting Services</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!--end: Navigation-->
+            </div>
+        </div>
+    </header>
+    <!--END: HEADER-->
+
+    <!-- Page title -->
+    <!-- <section id="page-title" data-bg-parallax="images/mainbackground.jpg">
+        <div class="container">
+            <div class="page-title">
+                <div class="div-content"></div>
+            </div>
+        </div>
+    </section> -->
+    <!-- end: Page title -->
+
+    <!-- Inspiro Slider -->
+    <div id="slider" class="inspiro-slider slider-fullscreen dots-creative" data-height-xs="360">
+        <!-- Slide 1 -->
+        <div class="slide kenburns" data-bg-parallax="images/mainbackground.jpg">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="slide-captions text-light text-center">
+                    <!-- Captions -->
+                    <span data-animate="fadeInUp" data-animate-delay="300" class="strong"><a href="#"
+                            class="business"><span class="business">Welcome To</span></a>
+                    </span>
+                    <h1 data-animate="fadeInUp" data-animate-delay="400">WE CARE HOME SERVICES</h1>
+                    <div data-animate="fadeInUp" data-animate-delay="900">
+                        <a href="services.html" class="btn btn-rounded btn-reveal btn-reveal-left"
+                            style="background-color:#000;border-color: #fff;">Explore</a>
+                    </div>
+                    <!-- end: Captions -->
+                </div>
+            </div>
+        </div>
+        <!-- end: Slide 1 -->
+    </div>
+    <!--end: Inspiro Slider -->
+
+    <!-- WELCOME -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2 class="text-medium m-t-0">Welcome to We Care Home Services</h2>
+                    <div class="seperator"></div>
+                    <p class="lead">Your Comfort, Our Priority.<br>At We Care Home Services, we understand that your
+                        home is your sanctuary. Our mission is to provide top-notch home services that ensure the
+                        comfort, safety, and well-being of you and your loved ones. With a team of skilled professionals
+                        and a commitment to excellence, we are your trusted partner for all your home service needs.<br>
+                    </p>
+                </div>
+                <div class="col-lg-7">
+                    <img src="images/fridge3.jpg" class="img-fluid" alt="Fridge">
+                </div>
+            </div>
+            <div class="row m-t-40">
+                <div class="col-lg-4">
+                    <img src="images/ac1.jpg" class="img-fluid" alt="AC">
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/fridge1.jpg" class="img-fluid" alt="Fridge">
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/paint1.jpg" class="img-fluid" alt="Paint">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end: WELCOME -->
+
+    <!-- ACCORDION & TEXT -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Our Services </h3>
+                    <div class="accordion toggle fancy clean">
+                        <div class="ac-item  ac-active">
+                            <h5 class="ac-title">Refrigerator Service</h5>
+                            <div class="ac-content">
+                                Our experts will keep your refrigerator running smoothly. From maintenance to repairs,
+                                we ensure your food stays fresh and your appliance works efficiently.
+                                <h4>Refrigerator Repairs: Keeping Your Food Fresh</h4> Is your refrigerator acting up,
+                                causing your food to spoil? At We Care Home Services, our skilled technicians are
+                                experts in refrigerator repairs. We understand the importance of a fully functional
+                                fridge in preserving your groceries and maintaining a safe environment for your family.
+                                Whether it's a faulty compressor, temperature control issues, or a leaking unit, we've
+                                got you covered. We diagnose and fix refrigerator problems promptly, ensuring your
+                                appliance operates at its best to keep your food fresh and your kitchen running
+                                smoothly.<br>
+                                <h4>Refrigerator Maintenance: Preventing Costly Breakdowns</h4> Prevention is key when
+                                it comes to your refrigerator's longevity and performance. Our refrigerator maintenance
+                                services are designed to keep your appliance running efficiently, extend its lifespan,
+                                and save you money on costly repairs. Our thorough maintenance checks include cleaning
+                                coils, checking for leaks, calibrating temperature controls, and ensuring proper
+                                ventilation. By scheduling regular maintenance with us, you can enjoy peace of mind,
+                                knowing that your refrigerator is well-taken care of, and your food stays fresh for
+                                longer.<br>
+                                <h4>Refrigerator Installation: Upgrading Your Kitchen</h4>Looking to replace your old
+                                refrigerator or upgrade to a more energy-efficient model? We offer professional
+                                refrigerator installation services that ensure a seamless transition. Our experienced
+                                technicians will safely install your new appliance, ensuring it's level, connected to
+                                power and water sources, and functioning correctly. We pay attention to every detail to
+                                guarantee that your new refrigerator not only fits perfectly in your kitchen but also
+                                operates at its peak performance, helping you save on energy bills and enhancing the
+                                overall efficiency of your home.<br>
+                                Choose We Care Home Services for all your refrigerator, ac, and painting needs, from
+                                repairs and maintenance to installations. We are committed to keeping your food fresh,
+                                your kitchen efficient, your home cool, colorfull and running smoothly.
+                                <br><br>
+                                <a href="services.html" class="explore">Explore Our Services</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3>About Our Work</h3>
+                    <p>At We Care Home Services, we have been dedicated to serving our community. We envisioned a
+                        company that would not only provide essential home services but also do so with a genuine sense
+                        of care and commitment to our clients. Today, we continue to uphold this vision, offering a wide
+                        range of services designed to make your life easier and your home more comfortable.</p>
+                    <p>Our team consists of highly trained and skilled professionals in various fields, from house
+                        cleaning to home maintenance, lawn care, pest control, and home health care. Each member of our
+                        team is carefully selected and trained to uphold our values of professionalism, integrity, and
+                        customer satisfaction.</p>
+                    <p>Whether you need urgent refrigerator repairs, a fresh coat of paint for your home, or specialized
+                        AC services, we've got you covered. Our comprehensive service variety means you can rely on a
+                        single, trusted partner for all your home service needs. This not only saves you time and effort
+                        but also ensures consistency in the quality of work across different aspects of your home.</p>
+                    <strong>Our Mission:</strong><br>
+                    We Care Home Services is more than just a service provider; we're your partner in creating a better
+                    home environment. Our mission is to enhance the quality of life for our clients by delivering
+                    top-notch services that address their specific needs. Whether it's ensuring a clean and healthy
+                    living space, maintaining the integrity of your home, or providing compassionate in-home health
+                    care, we are here to make a difference.<br><br>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <p class="text-center">Thank You for Considering Us: Your Trust Means the World</p>
+    </section>
+    <!-- end: ACCORDION & TEXT -->
+
+    <div class="seperator m-b-0"></div>
+
+    <!-- Footer -->
+    <footer id="footer" class="inverted">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="widget">
+
+                            <div class="widget-title">We Care Home Services</div>
+                            <p class="mb-5"> All rights reserved. Copyright © 2023.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="widget">
+                                    <div class="widget-title">Discover</div>
+                                    <ul class="list">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="services.html">services</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="widget">
+                                    <div class="widget-title">Services</div>
+                                    <ul class="list">
+                                        <li><a href="serrefrigeratorvices.html#">Refrigerator</a></li>
+                                        <li><a href="services.html#airconditioner">Air Conditioner</a></li>
+                                        <li><a href="services.html#painting">Painting</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="widget">
+                                    <div class="widget-title">Contact Us</div>
+                                    <ul class="footer-list" style="list-style-type: none;">
+                                        <li class="footer-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="location-outline"></ion-icon>
+                                            </div>
+                                            <a href="https://goo.gl/maps/BYA5MxQUg5B8ZFLcA">
+                                                <address class="item-text">
+                                                    Hyderabad, Secundrabad ,<br>
+                                                    Telangana.
+                                                </address>
+                                            </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="call-outline"></ion-icon>
+                                            </div>
+                                            <a href="tel:+919666351433" class="footer-link">+91-9666-351-433</a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="call-outline"></ion-icon>
+                                            </div>
+                                            <a href="tel:+917995414496" class="footer-link">+91-7995-414-496</a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="mail-outline"></ion-icon>
+                                            </div>
+                                            <a href="mailto:wecarehomeservices5@gmail.com"
+                                                class="footer-link">wecarehomeservices5@gmail.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-content">
+            <div class="container">
+                <div class="copyright-text text-center">&copy; 2023 - We Care Home Services. All Rights Reserved.</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end: Footer -->
+
+    </div> <!-- end: Body Inner -->
+
+    <!-- Scroll top -->
+    <a id="scrollTop" class="scroll-to" href="body"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+
+    <!--Plugins-->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!--Template functions-->
+    <script src="js/functions.js"></script>
+</body>
+
+</html>
