@@ -80,6 +80,10 @@
             display: none;
         }
 
+        .mainlogo {
+            padding: 5px 0;
+        }
+
 
         @media (max-width: 768px) {
             .quote {
@@ -92,6 +96,12 @@
 
             .phone-display {
                 display: initial;
+            }
+
+            .mainlogo {
+                display: flex;
+                width: 100%;
+                justify-content: center;
             }
         }
 
@@ -110,6 +120,12 @@
                 width: 100%;
                 height: 100%;
             }
+
+            .mainlogo {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -122,12 +138,15 @@
     <!-- Topbar -->
     <div id="topbar" class="dark topbar-colored topbar-fullwidth">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row" style="justify-content: space-between;">
+                <div>
                     <div style="margin-top:1rem;">
                         <span class="quote lead text-center" style="color: white;">Service Excellence, Home
                             Comfort</span>
                     </div>
+                </div>
+                <div class="mainlogo">
+                    <img src="images/mainlogo.jpg" width="150px" height="50px" alt="We care home services logo"/>
                 </div>
                 <div class="col-md-6 d-none d-sm-block">
                     <div class="contact">

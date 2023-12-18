@@ -68,6 +68,33 @@
             display: none;
         }
 
+        .mainlogo {
+            padding: 5px 0;
+        }
+
+        .slider1 {
+            display: flex;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            margin: 0 auto;
+        }
+
+        .slide1 {
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .slide1.active {
+            opacity: 1;
+        }
+
+        .slide1.inactive {
+            opacity: 0;
+            display: none;
+        }
 
         @media (max-width: 768px) {
             .quote {
@@ -80,6 +107,27 @@
 
             .phone-display {
                 display: initial;
+            }
+
+            .mainlogo {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .slider1 {
+                display: flex;
+                width: 100%;
+                height: 300px;
+                overflow: hidden;
+                border: 1px solid #ddd;
+                margin: 0 auto;
+            }
+
+            .slide1 {
+                width: 100%;
+                height: 100%;
+                transition: opacity 0.5s ease-in-out;
             }
         }
 
@@ -98,6 +146,27 @@
                 width: 100%;
                 height: 100%;
             }
+
+            .mainlogo {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .slider1 {
+                display: flex;
+                width: 100%;
+                height: 500px;
+                overflow: hidden;
+                border: 1px solid #ddd;
+                margin: 0 auto;
+            }
+
+            .slide1 {
+                width: 100%;
+                height: 100%;
+                transition: opacity 0.5s ease-in-out;
+            }
         }
     </style>
 </head>
@@ -110,12 +179,15 @@
     <!-- Topbar -->
     <div id="topbar" class="dark topbar-colored topbar-fullwidth">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row" style="justify-content: space-between;">
+                <div>
                     <div style="margin-top:1rem;">
                         <span class="quote lead text-center" style="color: white;">Bringing Comfort to Your
                             Doorstep</span>
                     </div>
+                </div>
+                <div class="mainlogo">
+                    <img src="images/mainlogo.jpg" width="150px" height="50px" alt="We care home services logo" />
                 </div>
                 <div class="col-md-6 d-none d-sm-block">
                     <div class="contact">
@@ -130,6 +202,21 @@
         </div>
     </div>
     <!-- end: Topbar -->
+
+    <!-- Services Slides -->
+
+    <div class="slider1">
+        <img src="images/ac1.jpg" alt="Image 1" class="slide1 active">
+        <img src="images/fridge3.jpg" alt="Image 2" class="slide1 inactive">
+        <img src="images/ac2.jpg" alt="Image 3" class="slide1 inactive">
+        <img src="images/paint1.jpg" alt="Image 3" class="slide1 inactive">
+        <img src="images/fridge4.jpg" alt="Image 3" class="slide1 inactive">
+        <img src="images/paint2.jpg" alt="Image 3" class="slide1 inactive">
+        <img src="images/fridge6.jpg" alt="Image 3" class="slide1 inactive">
+        <img src="images/paint3.jpg" alt="Image 3" class="slide1 inactive">
+    </div>
+
+    <!-- Services Slides End -->
     <!--HEADER-->
     <header id="header" class="dark">
         <div class="header-inner">
@@ -395,6 +482,21 @@
     <!-- end: Footer -->
 
     </div> <!-- end: Body Inner -->
+
+    <script>
+        const slides = document.querySelectorAll('.slide1');
+        let currentSlide = 0;
+
+        function changeSlide() {
+            slides[currentSlide].classList.remove('active');
+            slides[currentSlide].classList.add('inactive');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+            slides[currentSlide].classList.remove('inactive');
+        }
+
+        setInterval(changeSlide, 2000); // Change image every 2 seconds
+    </script>
 
     <!-- Scroll top -->
     <a id="scrollTop" class="scroll-to" href="body"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
