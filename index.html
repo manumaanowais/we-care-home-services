@@ -93,6 +93,25 @@
         .slide1.inactive {
             opacity: 0;
             display: none;
+        }        
+
+        .phone-number-display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        .carousel .polo-carousel-item .accordion-image-logo {
+            width: 35%;
+            aspect-ratio: 3/2;
+            object-fit: contain;
+            mix-blend-mode: color-burn;
+        }
+
+        #logos {
+            margin: 20px 100px;
         }
 
         @media (max-width: 768px) {
@@ -153,6 +172,17 @@
                 width: 100%;
                 height: 100%;
                 transition: opacity 0.5s ease-in-out;
+            }
+
+            .carousel .polo-carousel-item .accordion-image-logo {
+                width: 80%;
+                aspect-ratio: 3/2;
+                object-fit: contain;
+                mix-blend-mode: color-burn;
+            }
+
+            #logos {
+                margin: 10px 20px;
             }
         }
     </style>
@@ -263,6 +293,10 @@
 
 
     <!-- Services Slides End -->
+    <br><br>
+    <div class="phone-number-display">
+        <a href="tel:+919666351433"><i class="fa fa-phone"></i> +91 9666351433</a>
+    </div>
 
     <!-- WELCOME -->
     <section>
@@ -296,6 +330,29 @@
         </div>
     </section>
     <!-- end: WELCOME -->
+
+
+    <!-- Logos -->
+
+    <div class="carousel" id="logos" data-items="3" data-dots="false">
+        <img src="images/logos/amazonbasicslogo.png" alt="brand-logo" class="accordion-image-logo">
+        <img src="images/logos/bluestarlogo.png" alt="brand-logo" class="accordion-image-logo">
+        <img src="images/logos/carrierlogo.png" alt="brand-logo" class="accordion-image-logo">
+        <img src="images/logos/daikinlogo.png" alt="brand-logo" class="accordion-image-logo">
+        <img src="images/logos/godrejlogo.png" alt="brand-logo" class="accordion-image-logo">
+        <img src="images/logos/haierlogo.png" alt="brand-logo" class="accordion-image-logo">
+        <img src="images/logos/hitachilogo.png" alt="brand-logo" class="accordion-image-logo">
+        <img src="images/logos/lglogo.png" alt="brand-logo" class="accordion-image-logo">
+        <img src="images/logos/lloydlogo.png" alt="brand-logo" class="accordion-image-logo">
+        <img src="images/logos/mitsubishilogo.png" alt="brand-logo" class="accordion-image-logo">
+        <img src="images/logos/ogenerallogo.png" alt="brand-logo" class="accordion-image-logo">
+        <img src="images/logos/panasoniclogo.png" alt="brand-logo" class="accordion-image-logo">
+        <img src="images/logos/samsunglogo.png" alt="brand-logo" class="accordion-image-logo">
+        <img src="images/logos/voltaslogo.png" alt="brand-logo" class="accordion-image-logo">
+        <img src="images/logos/whirlpoollogo.png" alt="brand-logo" class="accordion-image-logo">
+    </div>
+
+    <!-- End Logos -->
 
     <!-- ACCORDION & TEXT -->
     <section>
